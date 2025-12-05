@@ -8,3 +8,7 @@ class DataIngestionConfig:
     train_data_path:str=Path(os.path.join('artifact','train.csv'))
     test_data_path:str = Path(os.path.join('artifact','test.csv'))
     raw_data_path:str = Path(os.path.join('artifact','data.csv'))
+
+@dataclass
+class DataTransformationConfig:
+    preprocessor_obj_file_path = os.path.join('artifact','preprocessor.pkl')
