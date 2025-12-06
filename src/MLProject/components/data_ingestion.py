@@ -23,7 +23,6 @@ class DataIngestion:
 
             logger.info("train test split is initiated....")
             train_set,test_set = train_test_split(df,test_size=0.2,random_state=42)
-
             save_csv(self.ingestion_config.train_data_path,train_set)
             save_csv(self.ingestion_config.test_data_path,test_set)
 
